@@ -22,9 +22,9 @@ my $target_dir;
 sub wanted() {
   my $f = $File::Find::name;
   if (-f $f) {
-    $script .= "mput $f\n";
+    $script .= "mput \"$f\"\n";
   } else {
-    $script .= "mkdir $f\n";
+    $script .= "mkdir \"$f\"\n";
   }
 }
 
