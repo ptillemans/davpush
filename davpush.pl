@@ -29,7 +29,7 @@ sub wanted() {
 }
 
 my $url = $ARGV[0];
-print "URL: $url";
+print "URL: $url\n";
 
 if ($url =~ m#dav://.*?(/\S*)#) {
 
@@ -47,5 +47,5 @@ if ($url =~ m#dav://.*?(/\S*)#) {
 } else {
   print "Usage: davpush.pl dav://<hostname>:<port>/<upload path>\n";
   print "\n";
-  print "Uploads all files and folders recursively to the WebDAV folder passed in the url.";
+  print "Uploads all files and folders recursively to the WebDAV folder passed in the url.\n";
 }
